@@ -6,7 +6,7 @@
 
 This project implements an **Explainable Mask Detection System** using **Weakly Supervised Object Localization (WSOL)**. Unlike standard classifiers that simply output "Mask" or "No Mask," this model identifies the location of the face/mask in the image without ever being trained on bounding boxes.
 
-By replacing traditional flattening layers with **Global Average Pooling (GAP)**, we can generate **Class Activation Maps (CAM)** to visualize exactly what the network is looking at—proving it is focusing on the face rather than background noise. [file:15]
+By replacing traditional flattening layers with **Global Average Pooling (GAP)**, we can generate **Class Activation Maps (CAM)** to visualize exactly what the network is looking at—proving it is focusing on the face rather than background noise.
 
 ## 🎯 Project Goal
 *   **Detection:** Classify images into binary categories: `WithMask` or `WithoutMask`.
@@ -26,7 +26,7 @@ By replacing traditional flattening layers with **Global Average Pooling (GAP)**
 *   **Domain:** Face Mask Detection.
 *   **Classes:** Binary Classification (`WithMask`, `WithoutMask`).
 *   **Input Size:** 256x256 pixels.
-*   **Preprocessing:** Rescaling (`1./255`) and extensive data augmentation (rotation 10°, zoom 0.3, shifts) to prevent the model from memorizing background locations. [file:15]
+*   **Preprocessing:** Rescaling (`1./255`) and extensive data augmentation (rotation 10°, zoom 0.3, shifts) to prevent the model from memorizing background locations.
 
 ## 🏗️ Model Architecture
 A custom VGG-style CNN designed for interpretability:
